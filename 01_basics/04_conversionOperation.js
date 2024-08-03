@@ -49,3 +49,30 @@ console.table([booleanIsLoggedIn, booleanIsLoggedInOne, booleanIsLoggedInEmpty, 
 let myNumber = 1
 let numberInString = Number (myNumber)
 console.table([numberInString, typeof(numberInString)])
+
+/* ***************************************Arithmetic Operators****************************************/
+let numberA = 6;
+let numberB = 2;
+
+let addition = numberA+numberB //6+2
+let subtraction = numberA-numberB // 6-2
+let multiplication = numberA*numberB // 6 X 2
+let exponentiation = numberA**numberB //6X6 (6 to the power 2)
+let division = numberA/numberB // 6/2
+let modulus = numberA%numberB // 6/2 after remender
+
+/*
+// console.log (addition)
+// console.log (subtraction)
+// console.log (multiplication)
+// console.log (exponentiation)
+// console.log (division)
+// console.log (modulus)
+*/
+
+console.table([addition, subtraction, multiplication, exponentiation, division, modulus])
+
+let str1 = "Sujit"
+let str2 = "Tomar"
+let str3 = str1+str2
+console.log(str3)
