@@ -15,13 +15,13 @@ let valueScoreUndefined = Number(scoreUndefined);
 let valueScoreBoolean = Number(scoreBoolean);
 let valueScoreString = Number(scoreString);
 
-/*
-console.log(typeof (valueInNumber));
-console.log(valueInNumber)
+
+// console.log(typeof (valueInNumber));
+// console.log(valueInNumber)
 
 console.table([typeof (valueInNumber), typeof (valueSocreNull), typeof (valueScoreUndefined), typeof(valueScoreBoolean), typeof(valueScoreString)])
 console.table([valueInNumber, valueSocreNull, valueScoreUndefined, valueScoreBoolean, valueScoreString])
-*/
+
 
 //01
 let isLoggedIn = 0;
