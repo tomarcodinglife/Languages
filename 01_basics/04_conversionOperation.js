@@ -76,3 +76,32 @@ let str1 = "Sujit"
 let str2 = "Tomar"
 let str3 = str1+str2
 console.log(str3)
+
+console.log(true)
+console.log(+true)
+
+console.log ("1" + 2)
+console.log(1 + "2")
+console.log("1" + 2 + 2)
+console.log (1 + 2 + "3")
+
+
+
+console.log(+"") 
+console.log(-"")
+
+console.log("------------------------Here----------------------")
+
+let myvalue = 101
+// ++myvalue
+console.log(++myvalue)
+
+let gamevalue = 500
+// gamevalue++
+console.log(gamevalue++)
+
+
+
+
+
+
