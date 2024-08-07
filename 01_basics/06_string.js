@@ -14,7 +14,6 @@ console.log(myFullName[2])
 console.log(myFullName.toUpperCase)
 console.log(typeof(myFullName))
 
-console.log("------------------------Here----------------------");
 
 let myString = "Sujit"
 console.log(myString.indexOf("u"));
@@ -24,5 +23,20 @@ console.log(myString.toLowerCase(myString));
 console.log(myString.toUpperCase(myString));
 console.log(myString.replace("Su", "A"));
 console.log(myString.length);
+
+
+console.log("------------------------Here----------------------");
+
+
+let myNewName = "      Sujit       "
+console.log(myNewName)
+console.log(myNewName.trim())
+
+const url = "http://sujittomar.com/sujiit%20tomar"
+console.log(url.replace("%20", "-"))
+console.log(url.includes("sujit"))
+
+let strintAgain = "Sujit-Rohan-Ram-Sohan-Aman-Raman"
+console.log(strintAgain.split("-"))
 
 
