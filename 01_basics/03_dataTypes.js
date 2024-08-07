@@ -59,7 +59,6 @@ const myFunction = function (){
 console.log(myFunction)
 console.log(typeof (myFunction))
 
-console.log("------------------------Here----------------------");
 
 let userFirst = {
     myName : "Ajit Kumar Singh",
@@ -82,4 +81,5 @@ userFirst.age = 25
 console.log(userFirst)
 console.log(userSecond)
 console.log(userThree)
+
 

@@ -8,4 +8,21 @@ console.log (`my name is ${fullName} and my profession is ${profession.toUpperCa
 const strFirst = "String Name"
 console.log (strFirst. charAt(2))
 
+const myFullName = new String ('Sujit')
+console.log(myFullName)
+console.log(myFullName[2])
+console.log(myFullName.toUpperCase)
+console.log(typeof(myFullName))
+
+console.log("------------------------Here----------------------");
+
+let myString = "Sujit"
+console.log(myString.indexOf("u"));
+console.log(myString.substring(0, 3));
+console.log(myString.slice(0, 3));
+console.log(myString.toLowerCase(myString));
+console.log(myString.toUpperCase(myString));
+console.log(myString.replace("Su", "A"));
+console.log(myString.length);
+
 
