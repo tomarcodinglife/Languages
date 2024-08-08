@@ -38,7 +38,7 @@ console.log((Math.random()*10) + 1)
 console.log(Math.floor(Math.random()*10) + 1)
 console.log(Math.ceil(Math.random()*10) + 1)
 
-console.log("*****************************From Here***************************************")
+
 
 let min = 1000
 let max = 9999
