@@ -52,6 +52,16 @@ console.log(myStudentDataB) // [ 'Raman', 'Sumit' ] after splice use your origin
 
 //************************************************************************************* */
 
+
 const cd01 = [851, 8525, 556, 452, 8552, 852]
+const cd02 = [1, 2, 3, 7, 8, 9, 5]
 
-
+cd01.push(cd02)
+console.log(cd01)
+/* Result - [851,   8525,  556,  452,  8552,  852,  [ 1, 2, 3, 7, 8, 9, 5 ]]
+you see array under array in result 
+that means your cd02 array are under index of 6
+*/
+console.log(cd01[6][5]) // 9
+/* that means whan you wants index result after push array this type like array unde array then you have this method.
+*/
