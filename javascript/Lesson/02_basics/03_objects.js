@@ -70,11 +70,6 @@ const student = {
     isPass : true,
     finalCGPA : 7.5,
     semCGPA : [6.5, 8.1, 7.8, 9.0, 6.9, 8.1, 8.6, 8.7],
-    // semesterCGPA : {
-    //                 totalSemester : 8,
-    //                 firstSemester : this.semCGPA[0],
-    //                 secondSemester : this.semCGPA[1]
-    //                },
     email : "sujit@google.com",
 };
 
