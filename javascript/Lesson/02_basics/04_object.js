@@ -95,10 +95,50 @@ console.log(Object.keys(objectimport)) // [ 'name', 'email', 'isLogIn', 'contact
 console.log(Object.values(objectimport)) // [ 'Sujit', 'sujittomar@gmail.com', true, 999999999 ]
 
 
-
+//*************************************************************************************
 console.log(Object.entries(objectimport)) 
 // [ [ 'name', 'Sujit' ], [ 'email', 'sujittomar@gmail.com' ], [ 'isLogIn', true ], [ 'contactNumber', 999999999 ]]
 
 //find object property method
 console.log(objectimport.hasOwnProperty('isLogIn')) //true
 console.log(objectimport.hasOwnProperty('roll number'))  // false
+
+const course = {
+    courseName : "JS in Hindi",
+    price : "999",
+    courseInstructor : "sujit"
+}
+
+//*************************************************************************************
+
+const {courseInstructor} = course
+console.log(courseInstructor) // sujit
+
+
+// object de-structure
+const {courseInstructor:instructor} = course
+console.log(instructor); // sujit
+
+
+//*************************************************************************************
+//api 
+
+
+
+/*
+{
+    "name" : "Sujit",
+    "courseName" : "js in hindi",
+    "price  " : "free",
+}
+*/
+
+
+
+/*
+[
+    {},
+    {},
+    {},
+]
+    */
