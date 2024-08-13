@@ -108,18 +108,22 @@ console.log(objectinfunction01(object01))// username Sujit and price is 2000
 
 // or second option for object pass in function
 
+
 console.log("****************************** From  *********************************")
-
-const object02 = 
-
 
 function objectinfunction02 (anyobject) {
     // console.log(`username ${object01.userName} and price is ${object01.price}`)
     return `username ${anyobject.userName} and price is ${anyobject.price}`
 };
 
-objectinfunction02({
+
+console.log(objectinfunction02({
     userName : "Sujit Tomar",
     price : 2000
-})
+}));
+
+// objectinfunction02({
+//     userName : "Sujit Tomar",
+//     price : 2000
+// });
 
