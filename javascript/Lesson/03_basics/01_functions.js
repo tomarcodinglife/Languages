@@ -111,19 +111,31 @@ console.log(objectinfunction01(object01))// username Sujit and price is 2000
 
 console.log("****************************** From  *********************************")
 
+
 function objectinfunction02 (anyobject) {
-    // console.log(`username ${object01.userName} and price is ${object01.price}`)
-    return `username ${anyobject.userName} and price is ${anyobject.price}`
-};
+    console.log(`username ${anyobject.userName} and price is ${anyobject.price}`)
+    // return `username ${anyobject.userName} and price is ${anyobject.price}`
+}
 
-
-console.log(objectinfunction02({
-    userName : "Sujit Tomar",
-    price : 2000
-}));
-
-// objectinfunction02({
+// console.log(objectinfunction02({
 //     userName : "Sujit Tomar",
-//     price : 2000
-// });
+//     price : 2000,
+// }));
 
+objectinfunction02({
+    userName : "Sujit Tomar",
+    price : 1999
+});
+
+// array in function
+
+const array01 = [50, 52, 21, 63, 62, 95, 12, 35]
+
+function arrayReturn (getArray) {
+    return array01[2]
+}
+
+console.log(arrayReturn(array01)) // 21 
+// or you can find this method
+
+console.log (arrayReturn([50, 52, 21, 63, 62, 95, 12, 35])) // 21
