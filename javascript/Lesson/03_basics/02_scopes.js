@@ -85,3 +85,25 @@ if (true) {
 }
 // console.log(userName)
 
+//*************************************************************************************
+
+console.log("****************************** From  *********************************")
+
+// in this case you can print function
+
+console.log(addone(2)) //3
+
+function addone (num) {
+    return num + 1
+}
+
+/* in this case you can not print function because this function 
+is under variable so print execute after function variable*/
+
+// console.log(addtwo(2)) // Cannot access 'addtwo' before initialization
+
+const addtwo = function (num) {
+    return num + 2
+}
+
+console.log(addtwo(2)) // 3
