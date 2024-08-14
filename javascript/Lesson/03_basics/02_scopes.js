@@ -1,5 +1,7 @@
 // block scope
 
+// Global Scope {}
+
 let a = 20
 const b = 10
 var c = 30
@@ -8,6 +10,10 @@ console.log(a)
 console.log(a)
 console.log(c)
 
+
+//*************************************************************************************
+
+// Block Level Scope Example with {}
 let students = {
     numberOfStudent : 11,
     roll1 : {
@@ -47,6 +53,35 @@ let students = {
     },
 };
 
-// Object.freeze(students)
+
 console.log(students.roll1)
-students.roll1.email 
+students.roll1.email = "sujit@yahoo.com"
+console.log(students.roll1)
+
+
+//*************************************************************************************
+
+function myfun1() {
+    const userName = "iamsujit"
+    function myFun01() {
+        website = "youtube"
+        console.log (userName)
+    }
+    // console.log(website)
+    myFun01()
+}
+
+myfun1()
+
+//*************************************************************************************
+
+if (true) {
+    const userName = "myselfsujittomar"
+    if (userName === "myselfsujittomar"){
+        const website = "sujittomar.com"
+        console.log(`my username is ${userName} & websie is ${website}`)
+    }
+    // console.log(website)
+}
+// console.log(userName)
+
