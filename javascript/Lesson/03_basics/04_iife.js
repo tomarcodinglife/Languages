@@ -20,13 +20,13 @@
 ((myName) => {
     console.log(`${myName}`)
 }
-)("sujit")
+)("sujit");
 
 
 ((myName) => {
     console.log(myName)
 }
-)("sujit")
+)("sujit");
 
 
 
