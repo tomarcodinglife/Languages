@@ -58,3 +58,4 @@ console.log(val1)
 const bookPrice = 5000
 
 bookPrice >= 2000 ? console.log("higher") : console.log("lower")
+    
