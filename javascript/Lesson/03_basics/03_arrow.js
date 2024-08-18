@@ -129,7 +129,7 @@ const arrowAddFun02 = (num1, num2) => (num1 + num2)
 console.log(arrowAddFun02(9, 1))
 
 //*************************************************************************************
-console.log("****************************** From  *********************************")
+
 // object with arrow function
 
 const student = {
@@ -145,4 +145,8 @@ const student = {
 let objwithfun = (obje) => obje
 console.log(objwithfun(student))
 
+console.log("****************************** From  *********************************")
+
 const myArray = [2, 5, 69, 9, 8]
+
+let ownArrayWithArrow = () => 

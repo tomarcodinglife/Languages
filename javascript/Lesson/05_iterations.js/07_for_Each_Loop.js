@@ -33,7 +33,7 @@ cpp
 */
 
 //*************************************************************************************
-console.log("****************************** From  *********************************");
+
 
 function printMe (value) {
     console.log(value)
@@ -89,3 +89,18 @@ js for JavaScript
 py for python
 cpp for c++
 */
+
+// for Each not return any value
+// but you want to return with for each than
+
+const MyArray = [1, 25, 6, 74, 85, 8, 34, 65, 75]
+
+const newMyArray = []
+
+MyArray.forEach( (num) => {
+    if (num > 4) {
+        newMyArray.push(num)
+    }
+})
+
+console.log(newMyArray) // [25,  6, 74, 85, 8, 34, 65, 75]
