@@ -1,3 +1,5 @@
+// For Each
+// this is not return any value
 
 const coding = ["C++", "Java", "Python", "ruby", "cpp"]
 
