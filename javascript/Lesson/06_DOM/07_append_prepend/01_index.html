@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+<body>
+    <div id="div" class="div"></div>
+</body>
+<script>
+
+let createElementWithDiv = function createEleWithDiv (dn, tn, it, clr) {
+        let divBox = document.createElement('div')
+        divBox.className = dn
+        let myTag = document.createElement(tn)//.style.color = clr
+        let myTagInnerText = myTag.innerText = it
+        divBox.appendChild(myTag)
+        document.body.appendChild(divBox)
+        myTag.style.color = clr
+    };
+
+createElementWithDiv("div", "h1", "Sujit Kumar Singh", "red");
+createElementWithDiv("div", "h1", "Rohit", "red");
+
+// let createElementWithoutDiv = function createEleWithoutDiv (tn, it, clr) {
+
+// };
+
+let dTag = document.createElement("div")
+let dh1 = document.createElement("h1")
+dTag.appendChild(dh1)
+dh1.innerText = "Amit Kumar Singh"
+dh1.style.color = "black"
+body.appendChild(dTag)
+console.log(dTag)
+console.log(dh1)
+
+
+</script>
+</html>
