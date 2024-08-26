@@ -4,7 +4,9 @@
 ## project link
 
 
-[Click Here](https://github.com/tomarcodinglife)
+[Github](https://github.com/tomarcodinglife)
+
+[stackbiltz](https://stackblitz.com/@tomarcodinglife/projects)
 
 # Solution Code 
 
