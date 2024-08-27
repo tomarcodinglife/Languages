@@ -10,7 +10,7 @@
 
 # Solution Code 
 
-## Project 1
+## Project 1 (Color Changer)
 
 ### JavaScript Code
 
