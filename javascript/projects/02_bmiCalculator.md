@@ -10,7 +10,7 @@
 
 # Solution Code 
 
-## Project 1 (bmi calculator)
+## Project 2 (bmi calculator)
 
 ### javascript Code 
 

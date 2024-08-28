@@ -10,7 +10,7 @@
 
 # Solution Code 
 
-## Project 1 (Digital Clock)
+## Project 3 (Digital Clock)
 
 ### javascript Code
 
