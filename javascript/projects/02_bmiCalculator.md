@@ -38,7 +38,7 @@ form.addEventListener('submit', function (e) {
 ```
 ### html code
 
-``` html
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>

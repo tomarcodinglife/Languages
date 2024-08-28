@@ -31,7 +31,7 @@ dateDiv.innerHTML = `${dateToday}`;
 
 ### html Code
 
-``` html
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>

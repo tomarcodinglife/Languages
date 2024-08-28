@@ -14,7 +14,7 @@
 
 ### JavaScript Code
 
-``` javascript
+```javascript
 
 console.log('Hi i am java Script');
 let buttons = document.querySelectorAll('.button');
@@ -44,7 +44,7 @@ buttons.forEach(function (button) {
 
 ### HTML Code
 
-``` html 
+```html 
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -69,7 +69,7 @@ buttons.forEach(function (button) {
 
 ### CSS Code
 
-``` css
+```css
 * {
   margin: 0;
   padding: 0;
