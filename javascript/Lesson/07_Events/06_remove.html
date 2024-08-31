@@ -12,7 +12,7 @@
 }
 
 #container {
-  position: absolute;
+  position: relative;
   height: 500px;
   width: 300px;
   background-color: rgb(251, 255, 0);
@@ -83,6 +83,10 @@ button:active {
   padding: 10px;
 }
 
+#images {
+    margin-left: 20px;
+}
+
     </style>
   </head>
   <body>
@@ -97,7 +101,18 @@ button:active {
         </div>
         <button id="button">Click Me</button>
     </div>
-  <script> 
+    <div>
+        <ul id="images">
+            <li> <img src="https://images.unsplash.com/photo-1721804978061-2c23db2b5e4c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="200px" alt="boy">
+            </li>
+            <li> <img src="https://images.unsplash.com/photo-1721614460824-a10e688dafb1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTd8fHxlbnwwfHx8fHw%3D" width="200px" alt="room"></li>
+            <li> <img src="https://plus.unsplash.com/premium_photo-1721755885914-892ef1675b23?q=80&w=1624&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="200px" alt="dance"></li>
+            <li> <a href="#"> Button </a></li>
+        </ul>
+    </div>
+<script> 
+
+
     console.log('Hi');
 let heartFirst = document.getElementById('p01');
 let heartSecond = document.getElementById('p02');
@@ -122,6 +137,33 @@ btn.addEventListener(
   },
   false
 );
+
+//*************************************below section important*******************************
+
+document.querySelector('#images').addEventListener('click', function(e) {
+    console.log(e)
+    console.log(e.target)
+    console.log(e.target.parentNode) // li select
+
+    // let removeIt = e.target.parentNode 
+    // removeIt.remove()
+
+    /* when you use this type approch than when you click on bullet point after that your all list remove because you use parent node than bullet parent is ul than you all list remove so 
+    */
+
+    // let myLi = e.target.parentNode
+    // myLi.parentNode.removeChild(myLi)
+
+    /* also this problem when you use this type approch than when you click on bullet point after that your all list remove because you use parent node than bullet parent is ul than you all list remove so 
+    */
+
+    // so we can use if else condition
+
+    if(e.target.tagName === 'IMG') {
+        let removeIt = e.target.parentNode 
+        removeIt.remove()
+    }
+})
 
 // document.getElementById('button').addEventListener(
 //   'click',
