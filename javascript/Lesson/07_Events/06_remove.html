@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  position: absolute;
+  height: 500px;
+  width: 300px;
+  background-color: rgb(251, 255, 0);
+  margin: 15px;
+  padding: 15px;
+  border-radius: 25px;
+  border: 5px solid black;
+  align-items: center;
+  justify-content: center;
+}
+
+.heart {
+  /* height: 100px;
+  width: 100px; */
+  font-size: 150px;
+  color: red;
+  margin: 10px;
+  padding: 10px;
+}
+
+#p02,
+#p01 {
+  animation: infinite;
+  animation-name: myanimation;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  /* animation-delay: 1s; */
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  color: red;
+}
+
+/* animation: 3s linear 1s infinite alternate slidein; */
+
+@keyframes myanimation {
+  from {
+    left: 0px;
+    color: red;
+  }
+  to {
+    right: 200px;
+    color: rgb(0, 0, 0);
+  }
+}
+
+button {
+  position: absolute;
+  bottom: 10px;
+  height: 35px;
+  width: 150px;
+  background-color: aqua;
+  color: black;
+  border: 2px solid black;
+  border-radius: 15px;
+  left: 90px;
+}
+
+button:active {
+  background-color: black;
+  color: white;
+}
+
+.heartClass {
+  color: aqua;
+  background-color: black;
+  font-size: 300px;
+  margin: 10px;
+  padding: 10px;
+}
+
+    </style>
+  </head>
+  <body>
+    <div id="container">
+        <div id="box">
+          <div id="hr01" class="heart">
+            <p id="p01">&#10084</p>
+          </div>
+          <div id="p02" class="heart">
+          <p id="p01">&#10084</p>
+        </div>
+        </div>
+        <button id="button">Click Me</button>
+    </div>
+  <script> 
+    console.log('Hi');
+let heartFirst = document.getElementById('p01');
+let heartSecond = document.getElementById('p02');
+let btn = document.getElementById('button');
+
+heartFirst.addEventListener(
+  'click',
+  function (e) {
+    console.log('clicked');
+    heartFirst.classList.remove('heart');
+    heartFirst.classList.add('heartClass');
+  },
+  false
+);
+
+btn.addEventListener(
+  'click',
+  function (e) {
+    console.log('Hi i am clicked event');
+    btn.style.color = 'red';
+    btn.style.backgroundColor = 'blue';
+  },
+  false
+);
+
+// document.getElementById('button').addEventListener(
+//   'click',
+//   function () {
+//     alert('Button Event');
+//   },
+//   false
+// );
+
+  </script>
+  </body>
+</html>
