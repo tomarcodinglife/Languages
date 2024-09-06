@@ -17,8 +17,11 @@
     const apiurl = 'https://api.github.com/users/hiteshchoudhary'
     const xhr = new XMLHttpRequest()
     xhr.open('get', apiurl)
+    xhr.onreadystatechange = function () {
+        console.log(xhr.readyState)
+    }
     xhr.send()
-    console.log(xhr.readyState)
+    // console.log(xhr.readyState)
 </script>
 </body>
 </html>
