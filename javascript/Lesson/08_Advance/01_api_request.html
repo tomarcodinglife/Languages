@@ -19,9 +19,13 @@
     xhr.open('get', apiurl)
     xhr.onreadystatechange = function () {
         console.log(xhr.readyState)
+        if(xhr.readyState === 4) {
+            let data = this.responseText
+            console.log(data)
+            // console.log(data.foloower)
     }
     xhr.send()
     // console.log(xhr.readyState)
 </script>
 </body>
-</html>
+</html> 
